@@ -73,7 +73,7 @@ function zellij.renameTab(newTabName)
 end
 
 function zellij.newPane()
-    zellij.ZellijCommand(zellij.mergeArgs({ ACTION, NEW_PANE, "-d", os.getenv("PWD") }), false)
+    zellij.ZellijCommand(zellij.mergeArgs({ ACTION, NEW_PANE, "-d", vim.fn.getcwd()}), false)
 end
 
 function zellij.newTab()
