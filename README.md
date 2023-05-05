@@ -1,6 +1,7 @@
 # zellij.nvim
 
 neovim integration with [zellij](https://github.com/zellij-org/zellij)
+capable of create new pane with PWD of neo-tree
 
 ## Features
 
@@ -14,7 +15,7 @@ For [vim-tmux-navigator](https://github.com/zellij-org/zellij) compatibility, us
 
 ```lua
 use {
-    'Lilja/zellij.nvim',
+    'lhiamgeek/zellij.nvim',
     config = function()
         require('zellij').setup({})
     end
